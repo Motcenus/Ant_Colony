@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Simulation</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <label for="speed">Speed:</label>
+        <input type="range" id="speed" min="0.1" max="5" step="0.1" value="1">
+        <span id="speedValue">1</span>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
